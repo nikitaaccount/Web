@@ -81,7 +81,22 @@ h1,h2,h3
 .btn-primary
 {
 	background-color: #fff;
-	border-radius: 10px;
+	border-radius: 10em;
+}
+.btn-secondary
+{
+	background-color: #fff;
+	border: 2px solid #e63946;
+	border-radius: 1.5em;
+	color: #e63946;
+}
+.btn-primary:hover
+{
+    background-color: #ddd;
+}
+.btn-secondary:hover
+{
+    background-color: #fcf3f2;
 }
 
 
@@ -165,8 +180,10 @@ h1,h2,h3
 .row
 {
 	height: 350px;
-	border: 2px solid black;
+	/* border: 2px solid black; */
 	background-color: #fff;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.313);
+	
 }
 .row1
 {
@@ -198,5 +215,58 @@ h1,h2,h3
 	height: 100%;
 	object-fit: cover;
 }
+.row::after
+{
+    content: " ";
+	display: block;
+	clear: both;
+}
+
+/* ##################################### features section styling ################################# */
+.features
+{
+	padding: 10rem 0;
+}
+.box-wrapper
+{
+	/* border: 2px solid greenyellow; */
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.301);
+}
+.box
+{
+    width: 33.333333333333%;
+	float: left;
+	padding: 2rem;
+	text-align: center;
+}
+.box-1, .box-3
+{
+	background-color: #263238;
+	color:#fff;
+}
+.box-2
+{
+	background:  linear-gradient(25deg,#d64c7f,#ee4758 50%);
+	color:#fff;
+}
+.box-wrapper::after
+{
+	content: " ";
+	display: block;
+	clear: both;
+}
+/* ############################# footer styling ########################## */
+.footer
+{
+	background: #263238;
+	color: #f4f4f4;
+	padding: 2rem;
+	text-align: center;
+}
+.social-media-links i
+{
+	margin: 2rem;
+}
+
 
 
