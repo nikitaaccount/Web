@@ -50,7 +50,7 @@ h1,h2,h3
 {
 	font-size: 3.5rem;
 }
-.mg-heading
+.md-heading
 {
 	font-size: 2.2rem;
 }
@@ -69,6 +69,10 @@ h1,h2,h3
 .text-grey
 {
 	color: #555555;
+}
+.bg-dark
+{
+	background-color: #263238;
 }
 .btn
 {
@@ -127,17 +131,17 @@ h1,h2,h3
 {
 	border-bottom: 1px solid #fff;
 }
-.header .navbar .logo
+.navbar .logo
 {
 	float: left;
 	/* font-size: 3.5rem; */
 }
-.header .navbar .nav-items
+.navbar .nav-items
 {
     float: right;
 	margin-top: 1rem;
 }
-.header .navbar .nav-item
+.navbar .nav-item
 {
 	display: inline-block;
 	margin: 1rem;
@@ -266,6 +270,365 @@ h1,h2,h3
 .social-media-links i
 {
 	margin: 2rem;
+}
+
+/* ############################ about page styling ####################### */
+.about
+{
+	padding: 5rem 0;
+}
+.about-heading::after
+{
+	
+	content: '';
+	display: block;
+	border: 3px solid #e63946;
+	width: 100%;
+}
+
+/* ############################ about wrapper styling ####################### */
+.about-wrapper
+{
+	text-align: center;
+	margin-top: 2rem;
+}
+.about-wrapper .left
+{
+    float: left;
+    width: 50%;
+}
+.about-wrapper .right
+{
+    float: right;
+    width: 50%;
+}
+.about-wrapper li::before
+{
+	content: '\2713';
+	color: #e63946;
+	font-weight: bold;
+	padding-right: 1rem;
+}
+.about-wrapper::after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* ############################### count-styling ############################# */
+.counts
+{
+   margin-top: 3rem;
+}
+.count-item
+{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.count-item span
+{
+	font-size: 3rem;
+	font-weight: 700;
+	color: #e63946;
+}
+.count-item p
+{
+	font-size: 1.8rem;
+    font-weight: 700;
+	color: #555;
+}
+.counts::after
+{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* ############################## banner styling ######################## */
+.cta-banner
+{
+	background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+	color: #f4f4f4;
+	padding: 1rem;
+	margin-top: 3rem;
+	box-shadow: 5px 5px 10px #00000057;  /* hori,vert,blur,color */
+}
+.cta-banner-left
+{
+	width: 60%;
+	float: left;
+}
+.cta-banner-right
+{
+	width: 40%;
+	float: right;
+	text-align: right;
+}
+.cta-line
+{
+	font-weight: 500;
+	font-size: 2rem;
+	margin-top: 1.5rem;
+}
+.btn-cta
+{
+	text-align: center;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 3rem;
+	text-transform: uppercase;
+	border: 4px solid white;
+	padding: 0.3rem 2.5rem;
+	letter-spacing: 0.5rem;
+	color: #f4f4f4;
+}
+.cta-banner::after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* ################################ contact page styling ######################## */
+.contact-form
+{
+	padding: 5rem 0;
+	background: #f7f7f7;
+}
+.form-wrapper .company-address
+{
+	background: #fff;
+	height: 760px;
+	width: 49%;
+	float: left;
+	padding: 1rem;
+}
+.form-wrapper .company-address i
+{
+	display: inline-block;
+	margin-right: 1rem;
+}
+.form-wrapper .company-address h2
+{
+	display: inline-block;
+	text-transform: uppercase;
+}
+.form-wrapper .company-address img
+{
+    max-width: 90%;
+	min-height: 40rem;
+	object-fit: cover;
+	object-position: right;
+}
+.form-wrapper .address-group
+{
+	margin-bottom: 2rem;
+}
+.form-wrapper::after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+  /* ################################# form styling ####################### */
+.form-wrapper .form
+{
+	height: 760px;
+	font-size: 1.6rem;
+	background: #fff;
+    width: 49%;
+	float: right;
+	padding: 1rem;
+}
+.form h1::after
+{
+	content: '';
+	display: block;
+	border: 3px solid #ee4758;
+	width: 100%;
+}
+.form-wrapper .form label
+{
+	display: block;
+}
+.form-wrapper .form input
+{
+	padding: 0.5rem;
+	width: 100%;
+}
+.form-wrapper .form .form-group
+{
+	margin-bottom: 1.2rem;
+}
+.form-wrapper .form label::after
+{
+	content: '*';
+	color: #e63946;
+}
+.form-wrapper .form textarea
+{
+	width: 100%;
+	height: 300px;
+	padding: 1rem;
+}
+.form-btn
+{
+	display: block;
+	margin: 0 auto;
+	padding: 0.5em 3em;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	background-color: #e63946;
+	color:#fff;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+/* ######################################## media queries #################################### */
+@media(max-width:500px)
+{
+	html
+	{
+		font-size: 8px; 
+		/* font-size: 50%; */
+	}
+	.navbar .nav-items, .navbar .logo
+	{
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;		
+	}
+	.row
+	{
+		height: auto;
+		width: 100%;
+	}
+	.row .img-box, .row .text-box
+	{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.features .box
+	{
+		float: none;
+		width: 100%;
+		text-align: center;
+	    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.301);
+	}
+	.features .box-2, .features .box-3
+	{
+		margin-top: 7rem;
+	}	
+    .box-wrapper
+    {
+	    box-shadow: none;
+    }
+	.cta-banner-left, .cta-banner-right
+	{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.form-wrapper .company-address
+	{
+		float: none;
+		width: 100%;
+		height: auto;
+		margin-bottom: 5rem;
+	}
+	.form-wrapper .form
+	{
+		float: none;
+		width: 100%;
+		height: auto;		
+	}
+}
+
+
+@media(min-width:501px) and (max-width:768px)
+{
+	html
+	{
+		font-size: 8px; 
+		/* font-size: 50%; */
+	}
+	p{
+        font-size: 1.8rem;
+	}
+	.navbar .nav-items, .navbar .logo
+	{
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;		
+	}
+	.row
+	{
+		height: auto;
+		width:  100%;
+	}
+	.row .img-box, .row .text-box
+	{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.features .box
+	{
+		float: none;
+		width: 100%;
+		text-align: center;
+	    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.301);
+	}
+	.features .box-2, .features .box-3
+	{
+		margin-top: 7rem;
+	}	
+    .box-wrapper
+    {
+	    box-shadow: none;
+    }
+	.cta-banner-left, .cta-banner-right
+	{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.form-wrapper .company-address
+	{
+		float: none;
+		width: 100%;
+		height: auto;
+		margin-bottom: 5rem;
+	}
+	.form-wrapper .form
+	{
+		float: none;
+		width: 100%;
+		height: auto;		
+	}
+}
+
+
+@media(min-width:769px) and (max-width:1200px)
+{
+	html
+	{
+		font-size: 56.25% 
+		/* means 900 px */
+	}
+}
+@media(orientation: landscape) and (max-height:500px)
+{
+	.header
+	{
+		height: 90vmax;
+	}
 }
 
 
